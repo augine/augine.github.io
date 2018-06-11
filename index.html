@@ -3,10 +3,14 @@
 	<head>
 		<title>Auginia G. - Didital Designer / Developer - Portfolio</title>
 		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="shortcut icon" href="favicon.ico">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+      <script src="form.js"></script>	
 	</head>
 	<body>
 
@@ -43,8 +47,8 @@
 							</section>
 
 						<!-- Panel -->
-							<section class="panel color1">
-								<div class="intro joined">
+							<section class="panel color1 medium">
+								<div class="intro joined span-6">
 									<h2 class="major">Key strengths</h2>
 										<ul class="alt">
 											<li>Attention to details, accuracy</li>
@@ -109,31 +113,42 @@
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="form.php">
+										<form id="reused_form">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required class="validate" />
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="email" name="email" id="email" />
+												<input type="email" name="email" id="email" required class="validate" />
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="4"></textarea>
+												<textarea name="message" id="message" rows="4" class="materialize-textarea validate"></textarea>
 											</div>
 											<ul class="actions">
-												<li><input type="submit" value="Send Message" class="button special" /></li>
+												<li><input type="submit" value="Send Message" class="button special waves-effect waves-light btn submitbtn" /></li>
 											</ul>
 										</form>
 									</div>
+                           <div id="error_message" style="width:100%; height:100%; display:none; ">
+                               <h4>
+                                   Error
+                               </h4>
+                               Sorry there was an error sending your form. 
+                           </div>
+                           <div id="success_message" style="width:100%; height:100%; display:none; ">
+                               <h4>
+                                   Success! Your Message was Sent Successfully.
+                               </h4>
+                           </div>
 									<div class="span-1-5">
 										<ul class="contact-icons color1">
-											<li class="icon fa-twitter"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-facebook"><a href="#">facebook.com/untitled</a></li>
-											<li class="icon fa-snapchat-ghost"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-instagram"><a href="#">@untitled-tld</a></li>
-											<li class="icon fa-medium"><a href="#">medium.com/untitled</a></li>
+											<li class="icon fa-linkedin"><a href="https://www.linkedin.com/in/augine">linkedin.com/in/augine</a></li>
+											<li class="icon fa-behance"><a href="https://www.behance.net/augine">be.net/augine</a></li>
+											<li class="icon fa-dribbble"><a href="https://dribbble.com/augine">dribbble.com/augine</a></li>
+											<li class="icon fa-instagram"><a href="https://www.instagram.com/augine">@augine</a></li>
+											<li class="icon fa-facebook"><a href="https://www.facebook.com/augine">facebook.com/augine</a></li>
 										</ul>
 									</div>
 								</div>
@@ -417,6 +432,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/main.js"></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
 
 	</body>
 </html>
