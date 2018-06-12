@@ -162,7 +162,7 @@ if (isset($_POST['name']) && isset($_POST['email'])  && isset($_POST['message'])
 								</div>
 								<div class="inner columns divided">
 									<div class="span-3-25">
-										<form method="post" action="form.php">
+										<form method="post" action="index.php">
 											<div class="field half">
 												<label for="name">Name</label>
 												<input type="text" name="name" id="name" />
