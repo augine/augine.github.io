@@ -1369,6 +1369,14 @@
 			width: 100% !important;
 			margin: -1rem 0 1.5rem -1rem;
 		}
+      
+		ul.grid-icons.thanks {
+			-moz-justify-content: -moz-center;
+			-webkit-justify-content: -webkit-center;
+			-ms-justify-content: -ms-center;
+			justify-content: center;
+			width: 100% !important;
+		}
 
 			ul.grid-icons .icon:before {
 				width: 4.5rem;
@@ -2858,6 +2866,11 @@
 						padding-top: 0;
 						padding-left: 1.75rem;
 					}
+      
+			.panel > .thanks {
+				padding: 2.8875rem 1.75rem 3rem 1.75rem ;
+				width: 100% !important;
+			}
 
 			.panel > .inner {
 				padding: 2.8875rem 1.75rem 1.3875rem 1.75rem ;
@@ -3755,7 +3768,7 @@
 			-ms-flex-direction: column;
 			flex-direction: column;
 			height: auto;
-			margin: 0 0 5rem 0;
+			margin: auto;
 			box-shadow: 0 0.25rem 1.5rem 0.25rem rgba(46, 43, 55, 0.5);
 		}
 
